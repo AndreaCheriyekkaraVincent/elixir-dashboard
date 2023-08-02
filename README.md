@@ -25,16 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Features
 Elixirs are displayed as cards.
 Each card contains information about Elixir name, ingredients, side effects and effects.
-It is possible to go to Elixir details page from the card
+It is possible to go to Elixir details page from the card.
 Users can search for Elixirs by name, with the search performed on the server side.
-Latest version of Angular 16 is used
-NgRx Store is implemented for loading elixir data
+Latest version of Angular 16 is used.
+NgRx Store is implemented for loading elixir data.
 UI library Angular material is used to implement cards and icons.
 
 ## Known Issues
 
-Since the search elixir by name is performed on the server side the exact case should be provided for the search term
-Styling requires more attention and is WiP
+Since the search elixir by name is performed on the server side the exact case should be provided for the search term.           
+Styling requires more attention and is WiP.
 
 ## Further help
 
