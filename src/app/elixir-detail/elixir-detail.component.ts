@@ -28,7 +28,6 @@ export class ElixirDetailComponent implements OnInit {
     this.elixirService.getElixirById(elixirId).subscribe(
       (elixir) => {
         this.elixir = elixir;
-        console.log('inside the details page', this.elixir);
       },
       (error) => {
         console.error('Error fetching Elixir details:', error);
