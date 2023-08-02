@@ -1,0 +1,13 @@
+<button mat-icon-button (click)="goToCardPage()">
+    <mat-icon>home</mat-icon>
+</button>
+<h1>DETAILS PAGE</h1>
+<div class="card" *ngIf="elixir">
+    <h2>{{ elixir.name }}</h2>
+    <ng-container *ngIf="elixir.ingredients && elixir.ingredients.length > 0">
+      <p>Ingredients : <span *ngFor="let ingredient of elixir.ingredients">{{ ingredient.name }}</span></p>
+    </ng-container>
+    <p>Side Effects: {{ elixir.sideEffects || 'None' }}</p>
+    <p>Effects: {{ elixir.effects }}</p>
+</div>
+  

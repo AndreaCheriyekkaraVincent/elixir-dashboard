@@ -1,0 +1,17 @@
+<div class="elixir-list" fxLayout="row wrap" fxLayoutAlign="start start">
+  <div>
+    <input type="text" placeholder="Search Elixirs" (keyup)="searchElixirs($event)">
+  </div>
+  <ng-container *ngIf="elixirs" >
+    <ng-container *ngIf="elixirs.length > 0; else noElixirs">
+      <mat-card *ngFor="let elixir of elixirs" (click)="goToDetailPage(elixir.id)" >
+        <mat-card-content>
+          <app-elixir-card [elixir]="elixir" (click)="goToDetailPage(elixir.id)"></app-elixir-card>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+    <ng-template #noElixirs>
+      <p>No Elixirs found.</p>
+    </ng-template>
+  </ng-container>
+</div>
