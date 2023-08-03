@@ -31,9 +31,7 @@ Latest version of Angular 16 is used.
 NgRx Store is implemented for loading elixir data.
 UI library Angular material is used to implement cards and icons.
 
-## Known Issues
-
-Since the search elixir by name is performed on the server side the exact case should be provided for the search term.           
+## Known Issues          
 Styling requires more attention and is WiP.
 
 ## Further help
